@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{HTTP:CF-IPCountry} ^GB$
+RewriteRule ^(.*)$ http://www.bbc.co.uk/programmes/b07pn8mz [L,R=301]
+
+RewriteCond %{HTTP:CF-IPCountry} ^US$
+RewriteRule ^(.*)$ http://www.pbs.org/wgbh/masterpiece/programs/poldark/ [L,R=301]
+
+RewriteCond %{HTTP:CF-IPCountry} ^AU$
+RewriteRule ^(.*)$ http://www.abc.net.au/tv/programs/poldark/ [L,R=301]
+
+Options -Indexes
+AddType text/vtt .vtt
+AddType text/plain .petra

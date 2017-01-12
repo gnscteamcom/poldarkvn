@@ -1,0 +1,157 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	overflow-x: hidden;
+}
+
+.drop-shadow {
+	text-shadow: 0px 0px 5px #000;
+}
+
+.horizontal-list li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+	font-size: 15pt;
+}
+
+.banner {
+	background-image: url("img/pd_bcover_2.jpg");
+	background-size: cover;
+	color: #fff;
+	min-height: 100vh;
+}
+
+.banner-i18n {
+	max-height: 400px !important;
+}
+
+.banner .banner-text {	
+	position: absolute;
+	width: 350px;
+	bottom: 50px;
+	left: 45%;
+    transform: translate(-45%, 0);
+}
+
+.banner .heading {
+	font-size: 23pt;
+}
+
+.banner .btn {
+	margin-top: 10px;
+	margin-right: 3px;
+}
+
+.banner .btn-banner {
+	font-size: 16pt;
+	width: 85%;
+}
+
+.vid-play {
+	width: 100%;
+	height: 500px;
+}
+
+span.active {
+	background-color: #27ae60;
+	color: #fff;
+}
+
+span.ep-active {
+	background-color: #2980b9;
+	color: #fff;
+}
+
+.series-selector li:hover {
+	cursor: pointer;
+}
+
+.episode-listing {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.episode-listing .panel-body {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.episode-desc {	
+	-webkit-transition: background-color 0.4s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 0.4s;
+}
+
+.episode-desc p {
+	font-size: 13pt;
+	margin-bottom: 2px;
+}
+
+.episode-desc:hover {
+	background-color: rgb(34,49,63);
+}
+
+.episode-thumb {
+	height: 300px;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center top;
+}
+
+.overlay {
+	position: absolute;
+	margin-left:-15px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.panel {
+	position: relative;
+}
+
+.panel-overlay {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 1000;	
+}
+
+.overlay h1 {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-49%, -50%);   
+}
+
+.collapse-spacing {
+	height: 15px;
+}
+
+.non-selectable {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;   
+}
+
+/* Responsive container from http://embedresponsively.com/ */
+/*.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }*/
+
+#video-player .loading {
+	width: 100%;
+	height: 250px;
+	padding-top: 70px;
+}
+
+.fade-transition {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: visibility 0s, opacity 0.4s linear; /* For Safari 3.1 to 6.0 */
+    transition: visibility 0s, opacity 0.4s linear;
+}
+
+.invisible {
+	visibility: hidden !important;
+	opacity: 0 !important;
+}
